@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AyQ Tech Group | AI & Smart Tech Solutions</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="AyQ Tech Group is a technology-driven team focused on AI, software development, smart city innovations, and scalable tech solutions across Africa." />
+  <meta name="keywords" content="AyQ Tech Group, AI solutions, smart city, Ethiopian tech company, software development, Endalamaw Ewnu, smart farming, tech innovation, Grarra21" />
+  <meta name="author" content="Endalamaw Ewnu" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph for Social Media Sharing -->
+  <meta property="og:title" content="AyQ Tech Group | AI & Smart Tech Solutions" />
+  <meta property="og:description" content="Discover how AyQ Tech Group is building innovative AI and smart technology solutions in Ethiopia and beyond." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-username.github.io/your-repo-name/" /> <!-- Replace with your actual GitHub Pages URL -->
+  <meta property="og:image" content="https://your-username.github.io/your-repo-name/cover-image.jpg" /> <!-- Optional: Replace with your image path -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AyQ Tech Group | AI & Smart Tech Solutions" />
+  <meta name="twitter:description" content="Tech-driven solutions for a smarter future, powered by AyQ Tech Group." />
+  <meta name="twitter:image" content="https://your-username.github.io/your-repo-name/cover-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Canonical Link -->
+  <link rel="canonical" href="https://your-username.github.io/your-repo-name/" />
+</head>
+
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="AYQ Tech Group offers AI, smart systems, and custom software development services to drive global digital transformation." />
+  <meta name="keywords" content="AYQ Tech Group, AI, Smart Systems, Software Development, Smart Farming, Smart Cities" />
+  <meta name="author" content="AYQ Tech Group" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- AOS Animate on Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Embedded CSS -->
+  <style>
+    :root {
+      --primary: #0050b3;
+      --dark: #111;
+      --light: #f9f9f9;
+      --white: #fff;
+      --gray: #666;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Header */
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px var(--shadow);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-weight: 800;
+      font-size: 1.8rem;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav .logo img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #d0e6ff;
+    }
+
+    /* Hero Section */
+    #hero {
+      background: linear-gradient(to right, #0050b3, #007bff);
+      color: var(--white);
+      padding: 6rem 2rem;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    #hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    #hero p {
+      font-size: 1.3rem;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* Section Titles */
+    section h3 {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    /* About */
+    #about p {
+      max-width: 850px;
+      margin: auto;
+      font-size: 1.15rem;
+      text-align: center;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+
+    /* Services */
+    #services ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      padding: 0;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    #services ul li {
+      background: var(--white);
+      padding: 2rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px var(--shadow);
+      list-style: none;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+      border-top: 4px solid var(--primary);
+    }
+
+    #services ul li:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px var(--shadow);
+    }
+
+    /* Portfolio */
+    #portfolio {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    #portfolio .project {
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px var(--shadow);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    #portfolio .project:hover {
+      transform: scale(1.03);
+    }
+
+    #portfolio img {
+      width: 100%;
+      display: block;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 3px solid var(--primary);
+      border-radius: 12px 12px 0 0;
+      filter: brightness(0.95);
+      transition: filter 0.3s ease;
+    }
+
+    #portfolio .project:hover img {
+      filter: brightness(1);
+    }
+
+    #portfolio .project-info {
+      padding: 1rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--dark);
+    }
+
+    /* Testimonials */
+    #testimonials {
+      background: var(--white);
+      padding: 4rem 2rem;
+      box-shadow: 0 -2px 15px var(--shadow);
+      margin: 3rem 0;
+    }
+
+    #testimonials blockquote {
+      max-width: 700px;
+      margin: 1rem auto;
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--gray);
+      border-left: 5px solid var(--primary);
+      padding-left: 1rem;
+      line-height: 1.6;
+      position: relative;
+    }
+
+    #testimonials blockquote::before {
+      content: "\201C";
+      font-size: 4rem;
+      color: var(--primary);
+      position: absolute;
+      left: -1.3rem;
+      top: -1.5rem;
+      opacity: 0.2;
+    }
+
+    #testimonials cite {
+      display: block;
+      text-align: right;
+      margin-top: 0.5rem;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    /* Contact Form */
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1.2rem;
+      border: 1.5px solid #ccc;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-family: 'Inter', sans-serif;
+      transition: border-color 0.3s ease;
+    }
+
+    form input:focus,
+    form textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 8px var(--primary);
+    }
+
+    form button {
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      width: 100%;
+      max-width: 250px;
+      display: block;
+      margin: auto;
+    }
+
+    form button:hover {
+      background: #003d80;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: var(--white);
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.95rem;
+      flex-shrink: 0;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        background-color: var(--primary);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        padding: 1rem;
+        display: none;
+        border-radius: 0 0 0 10px;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      nav .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 1.8rem;
+        color: var(--white);
+      }
+
+      nav {
+        position: relative;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#hero" class="logo">
+          <img src="./Logo.png" alt="AYQ Tech Group Logo" loading="lazy" />
+          AYQ (አይኪው) Tech Group
+        </a>
+        <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+        <ul id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <h2>Innovating Technology for a Better future</h2>
+      <p>Your partner in digital transformation and smart solutions.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" data-aos="fade-up" data-aos-duration="1200">
+    <div class="container">
+      <h3>About Us</h3>
+      <p>
+        AYQ Tech Group is a cutting-edge technology firm specializing in Artificial Intelligence, smart system integration,
+        and custom software solutions. Our mission is to drive global digital transformation while delivering sustainable,
+        intelligent, and scalable innovations for a smarter future.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" data-aos="fade-up" data-aos-duration="1400">
+    <div class="container">
+      <h3>Our Services</h3>
+      <ul>
+        <li>AI and Machine Learning Solutions</li>
+        <li>Smart Farming and Agricultural AI</li>
+        <li>Smart City Technology Development</li>
+        <li>Custom Software Development</li>
+        <li>IoT Integration and Automation</li>
+        <li>Training and Workshops on AI & Technology</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" data-aos="fade-up" data-aos-duration="1600">
+    <div class="container">
+      <h3>Portfolio</h3>
+      <div class="project" tabindex="0" aria-label="Project 1: Smart Farming System">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Smart Farming System" loading="lazy" />
+        <div class="project-info">Smart Farming AI System</div>
+      </div>
+      <div class="project" tabindex="0" aria-label="Project 2: AI-Powered Traffic Management">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="AI Traffic Management" loading="lazy" />
+        <div class="project-info">AI-Powered Traffic Management</div>
+      </div>
+      <div class="project" tabindex="0" aria-label="Project 3: Custom Software Platform">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Custom Software Development" loading="lazy" />
+        <div class="project-info">Custom Software Development Platform</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" data-aos="fade-up" data-aos-duration="1800">
+    <div class="container">
+      <h3>What Our Clients Say</h3>
+      <blockquote>
+        "AYQ Tech Group transformed our agricultural business with their AI-driven smart farming solutions. We increased productivity by 35%!"
+        <cite>- John Doe, AgriTech CEO</cite>
+      </blockquote>
+      <blockquote>
+        "Their smart city traffic system reduced congestion by 20% in our municipality. Professional and innovative team!"
+        <cite>- Jane Smith, City Planner</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <!-- ... (Rest of your code remains unchanged until just before the footer) -->
+
+  <!-- Contact Section -->
+<section id="contact" data-aos="fade-up" data-aos-duration="1600">
+  <div class="container">
+    <h3>Contact Us</h3>
+    <form action="mailto:ayiqgroup25@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Full Name" required />
+      <input type="email" name="Email" placeholder="Your Email Address" required />
+      <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer style="background:#222; color:#eee; padding:20px; text-align:center; font-family: Arial, sans-serif;">
+  <p>Contact us:</p>
+  <p>
+    📍 Addis Ababa, Ethiopia<br>
+    📞 +251 933 199 611 (<a href="https://t.me/Fb16222" target="_blank" rel="noopener noreferrer" style="color:#4CAF50; text-decoration:none;">Telegram</a>)<br>
+    ✉️ <a href="mailto:ayiqgroup25@gmail.com" style="color:#4CAF50; text-decoration:none;">ayiqgroup25@gmail.com</a><br>
+    🔗 <a href="https://www.linkedin.com/in/ayq-tech-group-b04792282/" target="_blank" rel="noopener noreferrer" style="color:#4CAF50; text-decoration:none;">LinkedIn Profile</a>
+  </p>
+  <p style="font-size:0.9em; color:#888;">&copy; 2025 AYQ Tech Group. All rights reserved.</p>
+</footer>
+
+
+<!-- AOS Animate on Scroll Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  // Initialize AOS
+  AOS.init();
+
+  // Responsive Nav Toggle Script
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+<!-- Google Analytics (placeholder) -->
+<script>
+  // Paste your Google Analytics snippet here
+  /*
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-XXXXXXXXX-X', 'auto');
+  ga('send', 'pageview');
+  */
+</script>
